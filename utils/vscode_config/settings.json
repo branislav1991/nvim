@@ -1,5 +1,5 @@
 {
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/branislav/neovim/bin/nvim",
   "vscode-neovim.neovimExecutablePaths.win32": "C:/Neovim/bin/nvim.exe",
   "vscode-neovim.neovimInitVimPaths.linux": "$NEOVIM_CONFIG/init.vim",
   "vscode-neovim.neovimInitVimPaths.win32": "$NEOVIM_CONFIG/init.vim",
@@ -1000,5 +1000,7 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "cmake.configureOnOpen": true,
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.colorTheme": "One Dark Pro",
+  "settingsSync.keybindingsPerPlatform": false,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"
 }
