@@ -1,8 +1,8 @@
 {
-  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
-  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+  "vscode-neovim.neovimExecutablePaths.win32": "C:/Neovim/bin/nvim.exe",
+  "vscode-neovim.neovimInitVimPaths.linux": "$NEOVIM_CONFIG/init.vim",
+  "vscode-neovim.neovimInitVimPaths.win32": "$NEOVIM_CONFIG/init.vim",
   "whichkey.sortOrder": "alphabetically",
   "whichkey.bindings": [
     {
@@ -871,19 +871,14 @@
     }
   ],
   "workbench.editor.showTabs": true,
-  "sync.gist": "939951904a077b97f8001bc35f6b5948",
   "gitlens.hovers.currentLine.over": "line",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.pythonPath": "/Users/chris/.miniconda/bin/python",
-  "java.semanticHighlighting.enabled": true,
-  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/chris/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
   "workbench.list.automaticKeyboardNavigation": false,
-  "oneDarkPro.editorTheme": "onedarkPro",
+  "oneDarkPro.editorTheme": "oneDarkPro",
   "python.languageServer": "Microsoft",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "kite.showWelcomeNotificationOnStartup": false,
   "python.terminal.activateEnvironment": false,
   "editor.cursorBlinking": "solid",
   "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
@@ -893,21 +888,13 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "terminal.external.osxExec": "iTerm.app",
   "editor.minimap.enabled": false,
   "workbench.activityBar.visible": false,
-  "leetcode.workspaceFolder": "/Users/chris/Repos/leetcode",
-  "leetcode.defaultLanguage": "javascript",
-  "leetcode.hint.configWebviewMarkdown": false,
-  "leetcode.hint.commentDescription": false,
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
   "window.menuBarVisibility": "toggle",
   "python.dataScience.alwaysTrustNotebooks": true,
-  "python.condaPath": "$HOME/.miniconda/bin/conda",
   "python.formatting.provider": "black",
-  "python.insidersChannel": "daily",
-  "terminal.integrated.shell.linux": "/bin/zsh",
-  "terminal.external.linuxExec": "/usr/bin/alacritty",
+  "python.insidersChannel": "off",
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
       "textMateRules": [
@@ -1012,7 +999,6 @@
   },
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "cmake.configureOnOpen": true,
+  "workbench.colorTheme": "One Dark Pro"
 }
