@@ -890,9 +890,9 @@
   },
   "editor.minimap.enabled": false,
   "workbench.activityBar.visible": false,
-  "window.zoomLevel": 2,
   "window.menuBarVisibility": "toggle",
   "python.dataScience.alwaysTrustNotebooks": true,
+  "window.zoomLevel": 1,
   "python.formatting.provider": "black",
   "python.insidersChannel": "off",
   "editor.tokenColorCustomizations": {
