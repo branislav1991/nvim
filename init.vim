@@ -20,7 +20,7 @@ if exists('g:vscode')
 endif
 
 " Add paths to node and python here
-source $NEOVIM_CONFIG/paths.vim
+" source $NEOVIM_CONFIG/paths.vim
 
 " Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
