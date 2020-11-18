@@ -4,6 +4,7 @@
   "vscode-neovim.neovimInitVimPaths.linux": "$NEOVIM_CONFIG/init.vim",
   "vscode-neovim.neovimInitVimPaths.win32": "$NEOVIM_CONFIG/init.vim",
   "whichkey.sortOrder": "alphabetically",
+  "whichkey.delay": 0,
   "whichkey.bindings": [
     {
       "key": ";",
@@ -286,18 +287,6 @@
           "command": "git.deleteBranch"
         },
         {
-          "key": "g",
-          "name": "Graph",
-          "type": "command",
-          "command": "git-graph.view"
-        },
-        {
-          "key": "h",
-          "name": "Heatmap",
-          "type": "command",
-          "command": "gitlens.toggleFileHeatmap"
-        },
-        {
           "key": "f",
           "name": "Fetch",
           "type": "command",
@@ -310,10 +299,40 @@
           "command": "git.pullFrom"
         },
         {
+          "key": "g",
+          "name": "Graph",
+          "type": "command",
+          "command": "git-graph.view"
+        },
+        {
+          "key": "h",
+          "name": "Heatmap",
+          "type": "command",
+          "command": "gitlens.toggleFileHeatmap"
+        },
+        {
+          "key": "H",
+          "name": "History",
+          "type": "command",
+          "command": "git.viewFileHistory"
+        },
+        {
           "key": "i",
           "name": "Init",
           "type": "command",
           "command": "git.init"
+        },
+        {
+          "key": "j",
+          "name": "Next Change",
+          "type": "command",
+          "command": "workbench.action.editor.nextChange"
+        },
+        {
+          "key": "k",
+          "name": "Previous Change",
+          "type": "command",
+          "command": "workbench.action.editor.previousChange"
         },
         {
           "key": "l",
@@ -533,13 +552,13 @@
         },
         {
           "key": "s",
-          "name": "Go to Symbol (Editor)",
+          "name": "Go to Symbol",
           "type": "command",
           "command": "workbench.action.gotoSymbol"
         },
         {
           "key": "S",
-          "name": "Go to Symbol (Workspace)",
+          "name": "Show All Symbols",
           "type": "command",
           "command": "workbench.action.showAllSymbols"
         }
@@ -547,6 +566,59 @@
     },
     {
       "key": "m",
+      "name": "Mark...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "c",
+          "name": "Clear Bookmarks",
+          "type": "command",
+          "command": "bookmarks.clear"
+        },
+        {
+          "key": "j",
+          "name": "Next Bookmark",
+          "type": "command",
+          "command": "bookmarks.jumpToNext",
+          "when": "editorTextFocus"
+        },
+        {
+          "key": "k",
+          "name": "Previous Bookmark",
+          "type": "command",
+          "command": "bookmarks.jumpToPrevious",
+          "when": "editorTextFocus"
+        },
+        {
+          "key": "l",
+          "name": "List Bookmarks",
+          "type": "command",
+          "command": "bookmarks.listFromAllFiles",
+          "when": "editorTextFocus"
+        },
+        {
+          "key": "r",
+          "name": "Refresh Bookmarks",
+          "type": "command",
+          "command": "bookmarks.refresh"
+        },
+        {
+          "key": "t",
+          "name": "Toggle Bookmark",
+          "type": "command",
+          "command": "bookmarks.toggle",
+          "when": "editorTextFocus"
+        },
+        {
+          "key": "s",
+          "name": "Show Bookmarks",
+          "type": "command",
+          "command": "workbench.view.extension.bookmarks"
+        }
+      ]
+    },
+    {
+      "key": "M",
       "name": "Minimap",
       "type": "command",
       "command": "editor.action.toggleMinimap"
@@ -557,6 +629,31 @@
       "type": "command",
       "command": "vscode-neovim.send",
       "args": ":noh<CR>"
+    },
+    {
+      "key": "o",
+      "name": "Open...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "d",
+          "name": "Directory",
+          "type": "command",
+          "command": "workbench.action.files.openFolder"
+        },
+        {
+          "key": "r",
+          "name": "Recent",
+          "type": "command",
+          "command": "workbench.action.openRecent"
+        },
+        {
+          "key": "f",
+          "name": "File",
+          "type": "command",
+          "command": "workbench.action.files.openFile"
+        }
+      ]
     },
     {
       "key": "p",
@@ -705,7 +802,7 @@
       ]
     },
     {
-      "key": "U",
+      "key": "u",
       "name": "UI toggles...",
       "type": "bindings",
       "bindings": [
@@ -876,7 +973,7 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.list.automaticKeyboardNavigation": false,
   "oneDarkPro.editorTheme": "oneDarkPro",
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Pylance",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "python.terminal.activateEnvironment": false,
@@ -889,11 +986,10 @@
     "**/.factorypath": true
   },
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false,
-  "window.zoomLevel": 2,
+  "workbench.activityBar.visible": true,
   "window.menuBarVisibility": "toggle",
-  "python.dataScience.alwaysTrustNotebooks": true,
-  "python.formatting.provider": "black",
+  "window.zoomLevel": 1,
+  "python.formatting.provider": "yapf",
   "python.insidersChannel": "off",
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
@@ -1000,7 +1096,17 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "cmake.configureOnOpen": true,
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Shades of Purple",
   "settingsSync.keybindingsPerPlatform": false,
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "git.ignoreMissingGitWarning": true,
+  "gitlens.blame.ignoreWhitespace": true,
+  "cpplint.cpplintPath": "c:\\\\Users\\\\branislav\\\\anaconda3\\\\Scripts\\\\cpplint.exe",
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "files.eol": "\n",
+  "terminal.integrated.inheritEnv": false,
+  "gitlens.codeLens.enabled": false,
+  "python.showStartPage": false,
+  "editor.snippetSuggestions": "bottom"
 }
