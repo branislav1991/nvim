@@ -986,10 +986,11 @@
     "**/.factorypath": true
   },
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
   "window.menuBarVisibility": "toggle",
+  "python.dataScience.alwaysTrustNotebooks": true,
   "window.zoomLevel": 1,
-  "python.formatting.provider": "yapf",
+  "python.formatting.provider": "black",
   "python.insidersChannel": "off",
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
