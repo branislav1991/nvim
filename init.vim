@@ -12,15 +12,10 @@ source $NEOVIM_CONFIG/general/functions.vim
 source $NEOVIM_CONFIG/keys/mappings.vim
 source $NEOVIM_CONFIG/plug-config/quickscope.vim
 
-if exists('g:vscode')
-  " VS Code extension
-  source $NEOVIM_CONFIG/vscode/settings.vim
-  source $NEOVIM_CONFIG/plug-config/easymotion.vim
-  source $NEOVIM_CONFIG/plug-config/highlightyank.vim
-endif
-
-" Add paths to node and python here
-" source $NEOVIM_CONFIG/paths.vim
+" VS Code extension
+source $NEOVIM_CONFIG/vscode/settings.vim
+source $NEOVIM_CONFIG/plug-config/easymotion.vim
+source $NEOVIM_CONFIG/plug-config/highlightyank.vim
 
 " Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
