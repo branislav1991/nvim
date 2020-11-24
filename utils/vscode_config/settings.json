@@ -1061,5 +1061,6 @@
     "{\"name\":\"AppAPI\", \"url\": \"C:\\\\SW\\\\PiurGEApp\"}"
   ],
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Quiet Light"
+  "workbench.colorTheme": "Quiet Light",
+  "python.analysis.autoImportCompletions": false
 }
