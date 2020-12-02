@@ -218,15 +218,5 @@
   {
     "key": "ctrl+shift+t",
     "command": "workbench.action.toggleMaximizedPanel"
-  },
-  {
-      "key": "ctrl+o",
-      "command": "workbench.action.navigateBack",
-      "when": "editorTextFocus && !neovim.recording && neovim.mode != 'insert'"
-  },
-  {
-      "key": "ctrl+i",
-      "command": "workbench.action.navigateForward",
-      "when": "editorTextFocus && !neovim.recording && neovim.mode != 'insert'"
   }
 ]

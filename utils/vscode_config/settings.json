@@ -1056,11 +1056,13 @@
   "python.showStartPage": false,
   "editor.snippetSuggestions": "bottom",
   "editor.lineNumbers": "relative",
-  "NugetGallery.sources": [
-    "{\"name\": \"nuget.org\",\"url\": \"https://api.nuget.org/v3/index.json\"}",
-    "{\"name\":\"AppAPI\", \"url\": \"C:\\\\SW\\\\PiurGEApp\"}"
-  ],
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Quiet Light",
-  "python.analysis.autoImportCompletions": false
+  "python.analysis.autoImportCompletions": false,
+  "workbench.colorTheme": "Palenight (Mild Contrast)",
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "branch-create:command"
+  ]
 }
