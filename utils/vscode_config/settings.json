@@ -1047,7 +1047,6 @@
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
   "git.ignoreMissingGitWarning": true,
   "gitlens.blame.ignoreWhitespace": true,
-  "cpplint.cpplintPath": "c:\\\\Users\\\\branislav\\\\anaconda3\\\\Scripts\\\\cpplint.exe",
   "python.linting.flake8Enabled": true,
   "python.linting.pylintEnabled": false,
   "files.eol": "\n",
@@ -1058,11 +1057,11 @@
   "editor.lineNumbers": "relative",
   "workbench.startupEditor": "newUntitledFile",
   "python.analysis.autoImportCompletions": false,
-  "workbench.colorTheme": "Palenight (Mild Contrast)",
   "gitlens.gitCommands.skipConfirmations": [
     "fetch:command",
     "stash-push:command",
     "switch:command",
     "branch-create:command"
-  ]
+  ],
+  "workbench.colorTheme": "Default Light+"
 }
